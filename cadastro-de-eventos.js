@@ -22,7 +22,7 @@ if (Idade > 18){
         alert('A data do evento é inválida!')
     }
 } else {
-    alert('Você não idade para cadastrar um evento, sua idade é ' + Idade)
+    alert('Você não tem idade para cadastrar um evento, sua idade é ' + Idade)
 }
 
 
