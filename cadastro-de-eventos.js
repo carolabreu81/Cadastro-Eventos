@@ -7,10 +7,12 @@ Nome = prompt('Qual é o seu nome? ')
 Idade = prompt('Informe sua idade')
 
 Data = new Date()
-DiaAtual = (Data.getDate() + '-' + (Data.getMonth() + 1) + '-' + Data.getFullYear()).split('-') 
+DiaAtual = (Data.getDate() + '/' + (Data.getMonth() + 1) + '/' + Data.getFullYear()).replaceAll('/', '') 
 
 if (Idade > 18){
     DiaDoEvento = prompt('Qual é o dia do Evento que você quer cadastrar? ').replaceAll('/', '') 
+    alert(DiaDoEvento)
+    alert(DiaAtual)
     if (DiaDoEvento > DiaAtual){
         QtdPart = prompt('Informe a quantidade de participantes: ')
         if (QtdPart > 100) {
